@@ -82,7 +82,7 @@ export const checkUser=async (req,res)=>
     else
     {
 
-        return res.json("User Not Found!!!! or Invalid Username or Password")
+        return res.status(401).json("User Not Found!!!! or Invalid Username or Password")
 
     }
 
