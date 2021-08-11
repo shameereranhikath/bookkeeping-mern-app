@@ -49,6 +49,9 @@ try
 catch(err)
 {
     dispatch({type:'USER_LOGIN_FAIL',payload:err.message})
+ 
+    //localStorage.setItem('userAuthData',"")
+
 }
 
 }
